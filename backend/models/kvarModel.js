@@ -16,6 +16,14 @@ const kvarSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     required: true,
     ref: 'Stub'
+  },
+  aktivan: {
+    type: Boolean,
+    default: true
+  },
+  datum: {
+    type: Date,
+    default: Date.now
   }
 })
 
